@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #14110e;
+}
+
+.main-page .active {
+    margin-bottom: 4px;
+    border-bottom: 2px solid #c99e71;
+}
+
+.main-page {
+    height: 100vh;
+    background-image: url(./images/bgi-1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.main-page .menu {
+    height: 13vh;
+}
+
+.main-page .menu,
+li,
+a {
+    background-color: #14110e;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-page .menu ul,
+.right-menu,
+.right-menu-icons {
+    display: flex;
+}
+
+.main-page .menu img {
+    width: 50%;
+}
+
+.main-page .menu a {
+    position: relative;
+    margin-right: 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.main-page .menu a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 30px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition:
+        width 0.3s ease 0s,
+        left 0.3s ease 0s;
+    width: 0;
+}
+
+.main-page .menu a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.active::after {
+    height: 2px;
+    width: 50%;
+    background: #c99e71;
+}
+
+.main-page .mainpage-body h1 {
+    font-family: "Righteous", sans-serif;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 72px;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+.main-page .mainpage-body p {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 2rem;
+}
+
+.main-page .mainpage-body button {
+    background-color: #c99e71;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 20px;
+    border: none;
+    margin-top: 2rem;
+}
+
+.main-page .mainpage-body button:hover {
+    background-color: #fff;
+    color: #c99e71;
+    border: 2px solid #c99e71;
+}
+
+.process-page {
+    height: 100vh;
+    background-color: #14110e;
+}
+
+.process-page .text {
+    display: flex;
+    margin: 70px 0 15px 0;
+}
+
+.process-page p {
+    font-family: "Righteous", sans-serif;
+    font-size: 24px;
+    color: #c99e71;
+    margin-right: 15px;
+}
+
+.process-page h3 {
+    font-size: 24px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.process-page .wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.process-page .process-1,
+.process-2 {
+    display: block;
+    margin-right: 30px;
+}
+
+.process-page img {
+    width: 366px;
+    height: 420px;
+}
+
+.our-history {
+    height: 100vh;
+    background-color: #14110e;
+    width: 100%;
+}
+
+.our-history .wrapper {
+    display: flex;
+    color: #fff;
+    width: 1160px;
+}
+
+.our-history .images {
+    display: flex;
+}
+
+.our-history .left img {
+    width: 325px;
+    height: 312px;
+    display: block;
+    margin: 0 15px 15px 0;
+}
+
+.our-history .right img {
+    width: 325px;
+    height: 635px;
+}
+
+.our-history .text {
+    padding: 4em;
+    background-color: #1c1814;
+    margin: 0 0 0 15px;
+    height: 635px;
+}
+
+.our-history span {
+    display: block;
+    color: #c99e71;
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    margin: 45px 0 0 0;
+}
+
+.our-history h3 {
+    font-family: "Righteous", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    margin: 25px 0 0 0;
+}
+
+.our-history p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-transform: capitalize;
+    margin: 35px 0 0 0;
+}
+
+.popular-product {
+    height: 110vh;
+    color: #fff;
+    margin-top: 35px;
+}
+
+.popular-product span {
+    display: block;
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #c99e71;
+}
+
+.popular-product h3 {
+    font-family: Righteous;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    text-align: center;
+    margin: 35px 0 0 0;
+}
+
+.popular-product .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.popular-product .box {
+    background-color: #121315;
+    width: 30%;
+    text-align: center;
+    height: 579px;
+    padding: 40px;
+    margin: 45px 0 0 0;
+}
+
+.popular-product img {
+    width: 270px;
+    height: 343px;
+    margin: 0 0 30px 0;
+}
+
+.popular-product .box span {
+    display: inline;
+}
+
+.popular-product .box h3 {
+    font-family: "Righteous", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.8px;
+    text-transform: uppercase;
+    margin: 15px 0 15px 0;
+}
+
+.popular-product .box:nth-child(1) h3 {
+    margin: 0 0 30px 0;
+}
+
+.popular-product .box button {
+    background-color: #c99e71;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 169px;
+    height: 48px;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid #c99e71;
+}
+
+.popular-product .box button:hover {
+    background-color: coral;
+}
+
+.popular-product .box button img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+.popular-product button {
+    display: block;
+    width: 252px;
+    height: 62px;
+    background-color: #c99e71;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #c99e71;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.popular-product button:hover {
+    background-color: coral;
+    border: 1px solid #fff;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    margin: 15em 0 0 0;
+}
+
+.hero .wrapper {
+    background-color: #1c1814;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    padding: 70px;
+}
+
+.hero img {
+    width: 226px;
+}
+
+.hero .images {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .text {
+    width: 70%;
+    padding: 50px;
+}
+
+.hero h3 {
+    font-family: "Righteous", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 62.4px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    width: 215px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #c99e71;
+    border: 2px solid #c99e71;
+    height: 62px;
+    padding: 20px 36px 20px 36px;
+}
+
+.hero button:hover {
+    color: #c99e71;
+    background-color: #fff;
+}
+
+
+.table-booking {
+    height: 100vh;
+    width: 100%;
+}
+
+.table-booking .wrapper {
+    background-color: #1c1814;
+    display: flex;
+}
+.table-booking .map {
+    width: 60%;
+    margin: 70px 0 70px 70px;
+}
+
+.table-booking .booking {
+    width: 100%;
+    padding: 70px;
+}
+
+.table-booking .booking p {
+    color: #C99E71;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.table-booking .booking h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.table-booking .booking input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    padding:  25px;
+    background-color: #14110E;
+    color: #fff;
+}
+
+.table-booking .booking input::placeholder {
+    color: #ccc;
+}
+
+.table-booking .booking input:focus {
+    outline: none;
+}
+
+.table-booking .booking .btn {
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C99E71;
+    color: #fff;
+    margin-top: 30px;
+    text-transform: uppercase; 
+    cursor: pointer; 
+}
+
+.table-booking .booking .btn:hover {
+    background-color: #fff;
+    color: #C99E71;
+    border: 2px solid #C99E71;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+footer img {
+    width: 40%;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    margin-left: 20px;
+}
+
+footer a {
+    text-transform: capitalize;
+    position: relative;
+}
+
+footer a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    top: 30px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition:
+        width 0.3s ease 0s,
+        left 0.3s ease 0s;
+    width: 0;
+}
+
+footer a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+footer .email {
+
+    position: relative;
+}
+
+footer input {
+    width: 200px;
+    height: 40px;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    background-color: #1c1814;
+}
+
+footer input::placeholder {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+footer input:focus {
+    outline: none;
+    color: #fff;
+}
+
+footer button {
+    background-color: #C99E71;
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    box-shadow: 0px 0px 10px 2px #C99E71;
+}
